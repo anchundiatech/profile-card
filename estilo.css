@@ -1,83 +1,147 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  width: 100%;
-  background-color: #EFF3BF;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Estilo del body con fondo responsivo */
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  background: #19A2AE;
+  background-image: url('img/bg-pattern-top.svg'), url('img/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 40%, 40%; /* Ajuste para hacerlo responsivo */
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
+/* Contenedor principal */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Tarjeta */
+.card {
+  width: 100%;
   max-width: 350px;
-  background: white;
-  border-radius: 13px;
-  padding: 3em;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabecera con imagen de fondo */
+.card-header {
+  background: url('img/bg-pattern-card.svg') no-repeat center/cover;
+  height: 100px;
+  position: relative;
+}
+
+/* Foto de perfil */
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 60px 20px 20px;
+}
+
+/* Nombre y edad */
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.age {
+  font-size: 18px;
+  font-weight: 400;
+  color: #777;
+}
+
+/* Ubicación */
+.location {
+  font-size: 16px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Sección de estadísticas */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.stats div {
   text-align: center;
 }
 
-.card-header {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
+.stats h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
 }
 
-.profile-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-info h3 {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 20px;
-  margin: 0.5em;
-}
-
-.profile-info h6 {
-  color: rgba(0, 0, 0, 0.5);
+.stats p {
   font-size: 12px;
-  margin: 0.3em;
+  color: #777;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 1em 0;
-}
+/* 📱 RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 60%, 60%; /* Ajusta los patrones en pantallas pequeñas */
+  }
 
-.social a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  transition: transform 0.2s ease-in-out;
-}
+  .card {
+    max-width: 90%; /* Reduce el ancho en móviles */
+  }
 
-.social a:hover {
-  transform: scale(1.2);
-  color: #0077b5; /* Color azul de LinkedIn */
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+    bottom: -40px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .age {
+    font-size: 16px;
+  }
+
+  .location {
+    font-size: 14px;
+  }
+
+  .stats h3 {
+    font-size: 16px;
+  }
+
+  .stats p {
+    font-size: 10px;
+  }
 }
