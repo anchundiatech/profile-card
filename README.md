@@ -43,8 +43,8 @@ Puedes desplegar tu proyecto usando cualquiera de los siguientes servicios gratu
 
 ## Enlaces
 
-- URL del repositorio: [https://github.com/tu-usuario/tu-repositorio](https://github.com/tu-usuario/tu-repositorio)
-- URL del sitio en vivo: [https://tu-usuario.github.io/tu-repositorio](https://tu-usuario.github.io/tu-repositorio)
+- URL del repositorio: [https://github.com/anchundiatech/profile-card](https://github.com/anchundiatech/profile-card)
+- URL del sitio en vivo: [https://anchundiatech.github.io/profile-card/](https://anchundiatech.github.io/profile-card/)
 
 ## Recursos
 
@@ -53,8 +53,8 @@ Puedes desplegar tu proyecto usando cualquiera de los siguientes servicios gratu
 
 ## Autor
 
-- Frontend Mentor - [@tu-usuario](https://www.frontendmentor.io/profile/tu-usuario)
-- Twitter - [@tu-usuario](https://twitter.com/tu-usuario)
+- Frontend Mentor - [@tu-usuario](https://www.frontendmentor.io/profile/anchundiatech)
+- Twitter - [@tu-usuario](https://x.com/thebeti1)
 
 ## Agradecimientos
 
